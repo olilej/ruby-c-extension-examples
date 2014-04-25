@@ -14,3 +14,15 @@ Notes on how the solution is set up:
 ### Xcode 4.5
 
 Tested to also work on Xcode 4.6 and Xcode 5.
+
+## Ruby
+
+Notes on how to call the HelloWorld extension from Ruby:
+
+require 'SUEX_HelloWorld'
+
+# Call constant CEXT_VERSION
+puts SUEX_HelloWorld::CEXT_VERSION
+
+# Call hello_world method
+puts SUEX_HelloWorld::hello_world
